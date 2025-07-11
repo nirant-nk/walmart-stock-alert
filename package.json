@@ -1,0 +1,38 @@
+{
+  "name": "stock-alert-backend",
+  "version": "1.0.0",
+  "description": "Stock Alert Api Prototype for Walmart",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev":"nodemon src/server.js",
+    "test": "alert"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nirant-nk/walmart-stock-alert.git"
+  },
+  "keywords": [
+    "walmart",
+    "stock-alert",
+    "alert"
+  ],
+  "author": "Nirant Kale",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nirant-nk/walmart-stock-alert/issues"
+  },
+  "homepage": "https://github.com/nirant-nk/walmart-stock-alert#readme",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
