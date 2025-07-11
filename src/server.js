@@ -4,8 +4,7 @@ import connectDB from "./config/db.js";
 import authRoutes from "./routes/auth.route.js";
 import productRoutes from "./routes/product.route.js";
 import stockerRoutes from "./routes/stocker.route.js";
-
-dotenv.config({ debug: true },{ quiet: true });
+dotenv.config({ debug: true,quiet: true  });
 
 const app = express();
 
@@ -18,7 +17,7 @@ app.use("/api/products", productRoutes);
 app.use("/api/stock", stockerRoutes);
 
 app.get("/", (req, res) => {
-  res.send("Stock Alert API Running...");
+  res.send("<h1>Stock Alert API Running...</h1>");
 });
 
 const PORT = process.env.PORT || 5000;
